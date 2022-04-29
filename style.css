@@ -1,0 +1,80 @@
+/* font */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Plus+Jakarta+Sans:wght@200&display=swap');
+
+* {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* colours */
+
+:root {
+    --black: #28262C;
+    --grey: #777283;
+    --darkPurple: #8775E1;
+    --lightPurple: #9FA0FF;
+    --white: #FFFFFF;
+}
+
+/* main container */
+
+#main-container {
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+/* logo */
+
+#logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+#logo img {
+    width: 20em;
+}
+
+/* header */
+
+h1 {
+    text-align: center;
+    margin-bottom: 2em;
+    color: var(--grey);
+}
+
+/* audio buttons */
+
+#audio-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.audio-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.8em;
+    height: 3.8em;
+    background-color: var(--darkPurple);
+    color: var(--white);
+    border-radius: 1em;
+    animation-name: button;
+    animation-duration: 1s;
+}
+
+@keyframes button {
+    0% {
+        background-color: var(--darkPurple);
+    }
+    50% {
+        background-color: var(--lightPurple);
+    }
+    100% {
+        background-color: var(--grey);
+    }
+}
